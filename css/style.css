@@ -1,0 +1,270 @@
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 3rem auto;
+  background: rgba(0, 0, 0, 0.938);
+  color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .for-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about .for-circle .circle {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.about .for-circle .circle .inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  overflow: hidden;
+}
+
+.about .for-circle .circle .inner-circle img {
+  position: absolute;
+  width: 140%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about .info {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about .info h1 {
+  font-size: 2rem;
+}
+
+.about .info p {
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+.about .info p span {
+  color: #2e5eaf;
+  font-weight: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/bgc.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+header .main-text {
+  width: 50%;
+  color: white;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 20px 50px;
+}
+
+header .main-text h1 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+header button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 1rem 9rem;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header button:hover {
+  background-color: #0e0d0d;
+  font-size: .9rem;
+}
+
+.course-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 75vh;
+  background: -webkit-gradient(linear, left top, right top, from(#1e3c72), to(#2a5298));
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 2.5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  color: #cfcccc;
+  font-weight: bold;
+}
+
+.course-info .course-title {
+  width: 100%;
+  text-align: center;
+  height: 12vh;
+}
+
+.course-info .course-title h1 {
+  font-size: 2rem;
+}
+
+.course-info .element-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.course-info .element-container .element-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.course-info .icon-wrapper {
+  position: relative;
+  width: 25%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  overflow: hidden;
+}
+
+.course-info .icon-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.course-info .text-wrapper {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  padding: 10px;
+}
+
+footer {
+  height: 10vh;
+  background: -webkit-gradient(linear, left top, right top, from(#673ab7), to(#512da8));
+  background: linear-gradient(to right, #673ab7, #512da8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .9rem;
+}
+/*# sourceMappingURL=style.css.map */

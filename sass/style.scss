@@ -1,0 +1,30 @@
+@import 'about';
+@import 'header';
+@import 'info';
+@import 'footer';
+@import 'wrapper';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    font-size: 10px;
+}
+h1 {
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  p{
+    font-size: .9rem;
+  }
