@@ -5,11 +5,56 @@
   background: rgba(0, 0, 0, 0.938);
   color: white;
   flex-wrap: wrap;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    flex-direction: column;
+         
+   }
+   @media only screen 
+   and (min-device-width: 375px) 
+   and (max-device-width: 667px) 
+   and (orientation: landscape) { 
+    flex-direction: column;
 
+   }
+   @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    flex-direction: column;
+
+
+}
   .for-circle {
     display: flex;
     justify-content: center;
     flex-basis: 50%;
+    font-size: 2rem;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+           flex-basis: 200px;
+     }
+     @media only screen 
+     and (min-device-width: 375px) 
+     and (max-device-width: 667px) 
+     and (orientation: landscape) { 
+      flex-basis: 200px;
+  
+     }
+     @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    flex-basis: 300px;
+
+}
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+  flex-basis: 300px;
+
+}
 
     .circle {
       position: relative;
@@ -18,11 +63,28 @@
       border-radius: 50%;
       background-color: white;
       margin: 20px 0;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        width: 200px;
+        height: 200px;
+  }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: landscape) { 
+    width: 200px;
+    height: 200px;
+  }
+  @media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+  width: 200px;
+  height: 200px;
+
+}
       .inner-circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include imgCenter;
         width: 92%;
         height: 92%;
         border-radius: 50%;
@@ -30,11 +92,8 @@
         overflow: hidden;
 
         img {
-          position: absolute;
+          @include imgCenter;
           width: 140%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
         }
       }
     }
@@ -42,15 +101,61 @@
   .info {
     flex-basis: 30%;
     align-self: center;
-  h1 {
+    h1 {
       font-size: 2rem;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        font-size: 1.3rem;
+        text-align: center;
+  }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: landscape) { 
+    font-size: 1.3rem;
+    text-align: center;
+
+  }
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
     }
     p {
       font-size: 1rem;
       line-height: 200%;
-      span{
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        font-size: 1rem;
+        text-align: center;
+        padding: 25px;
+  }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: landscape) { 
+    font-size: 1rem;
+    text-align: center;
+    padding: 25px;
+  }
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    font-size: 1rem;
+    text-align: center;
+    padding: 30px;
+
+
+}
+      span {
         color: #2e5eaf;
-        font-weight:bold;
+        font-weight: bold;
       }
     }
   }

@@ -10,6 +10,33 @@
       flex-wrap: wrap;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about .for-circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,6 +46,35 @@
           justify-content: center;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  font-size: 2rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .about .for-circle {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .about .for-circle {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about .for-circle {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .about .for-circle {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+  }
 }
 
 .about .for-circle .circle {
@@ -28,6 +84,27 @@
   border-radius: 50%;
   background-color: white;
   margin: 20px 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .about .for-circle .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .about .for-circle .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .about .for-circle .circle {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .about .for-circle .circle .inner-circle {
@@ -45,11 +122,11 @@
 
 .about .for-circle .circle .inner-circle img {
   position: absolute;
-  width: 140%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 140%;
 }
 
 .about .info {
@@ -64,9 +141,54 @@
   font-size: 2rem;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .about .info h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .about .info h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .about .info h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
 .about .info p {
   font-size: 1rem;
   line-height: 200%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .about .info p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .about .info p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .about .info p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 30px;
+  }
 }
 
 .about .info p span {
@@ -78,18 +200,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url(../img/bgc.jpg);
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.4))), url(../img/bgc.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../img/bgc.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,16 +215,275 @@ header {
 }
 
 header .main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: white;
   line-height: 35px;
-  background-color: rgba(0, 0, 0, 0.658);
+  background-color: rgba(0, 0, 0, 0.514);
   padding: 20px 50px;
 }
 
+@media screen and (max-width: 1600px) {
+  header .main-text {
+    padding: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  header .main-text {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text {
+    width: 100%;
+    padding: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  header .main-text {
+    width: 100%;
+    padding: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+header .main-text .inner-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text .inner-txt {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  header .main-text .inner-txt {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text .inner-txt {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
 header .main-text h1 {
-  text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text h1 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  header .main-text h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text h2 {
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text h2 {
+    font-size: 0.7rem;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  header .main-text h2 {
+    font-size: 0.7rem;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+header .main-text .inner-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  header .main-text .inner-icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text .inner-icons {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text .inner-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  header .main-text .inner-icons {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text .inner-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  header .main-text .inner-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5px;
+  }
+}
+
+header .main-text .inner-icons .course {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .main-text .inner-icons .course {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text .inner-icons .course {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header .main-text .inner-icons .course {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  header .main-text .inner-icons .course {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+header .main-text .inner-icons .course img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+header .main-text .inner-icons .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 header button {
@@ -117,21 +493,57 @@ header button {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 1rem 9rem;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: black;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 1rem;
   border-radius: 10px;
   border: 2px solid white;
   cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header button {
+    font-size: 0.7rem;
+    width: 80%;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  header button {
+    bottom: 5%;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  header button {
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header button {
+    font-size: 0.7rem;
+    width: 60%;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  header button {
+    font-size: 0.7rem;
+    width: 60%;
+    padding: 1rem 0;
+  }
 }
 
 header button:hover {
-  background-color: #0e0d0d;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .course-info {
@@ -142,18 +554,14 @@ header button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 75vh;
   background: -webkit-gradient(linear, left top, right top, from(#1e3c72), to(#2a5298));
   background: linear-gradient(to right, #1e3c72, #2a5298);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-top: 2.5rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 20px;
+  padding: 30px;
   color: #cfcccc;
-  font-weight: bold;
 }
 
 .course-info .course-title {
@@ -166,6 +574,18 @@ header button:hover {
   font-size: 2rem;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .course-info .course-title h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .course-info .course-title h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .course-info .element-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,13 +594,40 @@ header button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .course-info .element-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .course-info .element-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .course-info .element-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .course-info .element-container .element-wrapper {
@@ -198,11 +645,17 @@ header button:hover {
       flex-basis: 25%;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .course-info .element-container .element-wrapper {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 .course-info .icon-wrapper {
   position: relative;
-  width: 25%;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  width: 30%;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -210,9 +663,27 @@ header button:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .course-info .icon-wrapper img {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .course-info .icon-wrapper {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .course-info .icon-wrapper {
+    width: 15%;
+  }
 }
 
 .course-info .text-wrapper {
@@ -226,8 +697,8 @@ header button:hover {
 
 footer {
   height: 10vh;
-  background: -webkit-gradient(linear, left top, right top, from(#673ab7), to(#512da8));
-  background: linear-gradient(to right, #673ab7, #512da8);
+  background: -webkit-gradient(linear, left top, right top, from(#1e3c72), to(#2a5298));
+  background: linear-gradient(to right, #1e3c72, #2a5298);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

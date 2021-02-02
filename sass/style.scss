@@ -1,9 +1,9 @@
+@import 'mixins';
 @import 'about';
 @import 'header';
 @import 'info';
 @import 'footer';
 @import 'wrapper';
-
 
 
 *{
@@ -21,6 +21,7 @@ h1 {
     font-size: 1.5rem;
     line-height: 50px;
     margin-bottom: 10px;
+   
   }
   h2 {
     font-size: 1rem;
