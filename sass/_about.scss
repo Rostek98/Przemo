@@ -25,6 +25,12 @@
 
 
 }
+@media only screen 
+and (max-device-width: 768px) 
+{
+  flex-direction: column;
+
+}
   .for-circle {
     display: flex;
     justify-content: center;
@@ -55,6 +61,13 @@ and (orientation: landscape) {
   flex-basis: 300px;
 
 }
+@media only screen 
+and (max-device-width: 768px) 
+{
+  flex-basis: 300px;
+
+
+}
 
     .circle {
       position: relative;
@@ -81,6 +94,14 @@ and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) { 
   width: 200px;
   height: 200px;
+
+}
+@media only screen 
+and (max-device-width: 768px) 
+{
+  width: 200px;
+  height: 200px;
+
 
 }
       .inner-circle {
@@ -124,6 +145,13 @@ and (orientation: landscape) {
     text-align: center;
 
 }
+@media only screen and (max-device-width: 768px) 
+{
+  text-align: center;
+  
+
+}
+
 
     }
     p {
@@ -151,6 +179,14 @@ and (orientation: landscape) {
     text-align: center;
     padding: 30px;
 
+
+}
+
+@media only screen and (max-device-width: 768px) 
+{
+  font-size: 1rem;
+    text-align: center;
+    padding: 40px;
 
 }
       span {
