@@ -8,36 +8,11 @@
   color: white;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -50,46 +25,32 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   font-size: 2rem;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media (max-width: 1200px) {
   .about .for-circle {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+@media (max-width: 768px) {
   .about .for-circle {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .about .for-circle {
-    -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .about .for-circle {
-    -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .about .for-circle {
-    -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -99,34 +60,27 @@
   height: 20vw;
   border-radius: 50%;
   background-color: white;
-  margin: 20px 0;
+  margin: 25px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media (max-width: 1200px) {
   .about .for-circle .circle {
-    width: 200px;
-    height: 200px;
+    width: 30vw;
+    height: 30vw;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+@media (max-width: 992px) {
   .about .for-circle .circle {
-    width: 200px;
-    height: 200px;
+    width: 25vw;
+    height: 25vw;
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media (max-width: 576px) {
   .about .for-circle .circle {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .about .for-circle .circle {
-    width: 200px;
-    height: 200px;
+    width: 35vw;
+    height: 35vw;
   }
 }
 
@@ -153,78 +107,52 @@
 }
 
 .about .info {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .about .info {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 25px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .info {
+    width: 80%;
+  }
 }
 
 .about .info h1 {
   font-size: 2rem;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media (max-width: 992px) {
   .about .info h1 {
     font-size: 1.3rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  .about .info h1 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .about .info h1 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .about .info h1 {
     text-align: center;
   }
 }
 
 .about .info p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 200%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media (max-width: 768px) {
   .about .info p {
-    font-size: 1rem;
     text-align: center;
-    padding: 25px;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+@media (max-width: 576px) {
   .about .info p {
-    font-size: 1rem;
     text-align: center;
-    padding: 25px;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .about .info p {
-    font-size: 1rem;
-    text-align: center;
-    padding: 30px;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .about .info p {
-    font-size: 1rem;
-    text-align: center;
-    padding: 40px;
   }
 }
 
@@ -241,7 +169,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.4))), url(../img/bgc.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../img/bgc.jpg);
   background-position: top;
@@ -249,6 +176,14 @@ header {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9))), url(../img/bgc-small.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../img/bgc-small.jpg);
+    background-attachment: scroll;
+  }
 }
 
 header .main-text {
@@ -275,56 +210,28 @@ header .main-text {
   padding: 20px 50px;
 }
 
-@media screen and (max-width: 1600px) {
-  header .main-text {
-    padding: 50px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-}
-
-@media screen and (max-width: 1400px) {
+@media (max-width: 1200px) {
   header .main-text {
     width: 80%;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 992px) {
   header .main-text {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    padding: 20px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .main-text {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .main-text {
     padding: 10px;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  header .main-text {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header .main-text {
-    width: 100%;
-    padding: 20px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header .main-text {
-    width: 100%;
-    padding: 20px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 
@@ -336,100 +243,85 @@ header .main-text .inner-txt {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  header .main-text .inner-txt {
-    padding: 20px;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  header .main-text .inner-txt {
-    padding: 0;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  header .main-text .inner-txt {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  header .main-text .inner-txt {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 header .main-text h1 {
   font-size: 2rem;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 1200px) {
   header .main-text h1 {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (max-width: 992px) {
+  header .main-text h1 {
+    font-size: 1.1rem;
+    line-height: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  header .main-text h1 {
     font-size: 1rem;
+    text-align: center;
     line-height: 25px;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header .main-text h1 {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header .main-text h1 {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  header .main-text h1 {
-    text-align: center;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 992px) {
   header .main-text h2 {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 0.7rem;
-    line-height: 25px;
+    line-height: 20px;
+    flex-grow: 1;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media (max-width: 768px) {
   header .main-text h2 {
     font-size: 0.7rem;
-    line-height: 25px;
     text-align: center;
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media (max-width: 576px) {
   header .main-text h2 {
+    width: 100%;
     font-size: 0.7rem;
-    line-height: 25px;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  header .main-text h2 {
-    text-align: center;
   }
 }
 
@@ -439,9 +331,28 @@ header .main-text .inner-icons {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 992px) {
+  header .main-text .inner-icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   header .main-text .inner-icons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -453,47 +364,6 @@ header .main-text .inner-icons {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  header .main-text .inner-icons {
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header .main-text .inner-icons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  header .main-text .inner-icons {
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header .main-text .inner-icons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 5px;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header .main-text .inner-icons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 5px;
-  }
-}
-
 header .main-text .inner-icons .course {
   position: relative;
   width: 200px;
@@ -502,31 +372,24 @@ header .main-text .inner-icons .course {
   border-radius: 50%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 1200px) {
   header .main-text .inner-icons .course {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media (max-width: 992px) {
   header .main-text .inner-icons .course {
     width: 80px;
     height: 80px;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media (max-width: 576px) {
   header .main-text .inner-icons .course {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header .main-text .inner-icons .course {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -545,64 +408,50 @@ header .main-text .inner-icons .price {
       align-self: center;
 }
 
-header button {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding: 1rem 9rem;
+header .main-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+@media (max-width: 768px) {
+  header .main-btn {
+    -webkit-box-flex: 1.5;
+        -ms-flex-positive: 1.5;
+            flex-grow: 1.5;
+  }
+}
+
+header .main-btn a {
+  text-decoration: none;
   background-color: white;
-  color: black;
+  padding: 10px 120px;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 2px solid white;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  color: black;
+  font-size: 15px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  header button {
+@media (max-width: 992px) {
+  header .main-btn a {
     font-size: 0.7rem;
-    width: 80%;
-    padding: 1rem 0;
+    padding: 1px 100px;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  header button {
-    bottom: 5%;
-    width: 70%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  header button {
-    bottom: 5%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header button {
+@media (max-width: 576px) {
+  header .main-btn a {
     font-size: 0.7rem;
-    width: 60%;
-    padding: 1rem 0;
+    padding: 5px 80px;
   }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  header button {
-    font-size: 0.7rem;
-    width: 60%;
-    padding: 1rem 0;
-  }
-}
-
-header button:hover {
-  font-size: 0.9rem;
 }
 
 .course-info {
@@ -624,8 +473,16 @@ header button:hover {
 }
 
 .course-info .course-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  text-align: center;
   height: 12vh;
 }
 
@@ -633,15 +490,15 @@ header button:hover {
   font-size: 2rem;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media (max-width: 992px) {
   .course-info .course-title h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+@media (max-width: 768px) {
   .course-info .course-title h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -662,25 +519,7 @@ header button:hover {
       flex-wrap: wrap;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .course-info .element-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  .course-info .element-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media (max-width: 992px) {
   .course-info .element-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -704,25 +543,29 @@ header button:hover {
       flex-basis: 25%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .course-info .element-container .element-wrapper {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-}
-
-@media only screen and (max-device-width: 768px) {
-  .course-info .element-container .element-wrapper {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-}
-
 .course-info .icon-wrapper {
   position: relative;
   width: 30%;
   height: 150px;
   overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .course-info .icon-wrapper {
+    width: 12%;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-info .icon-wrapper {
+    width: 18%;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-info .icon-wrapper {
+    width: 25%;
+  }
 }
 
 .course-info .icon-wrapper img {
@@ -734,24 +577,6 @@ header button:hover {
   width: 100%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  .course-info .icon-wrapper img {
-    width: 70%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  .course-info .icon-wrapper {
-    width: 20%;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .course-info .icon-wrapper {
-    width: 15%;
-  }
-}
-
 .course-info .text-wrapper {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
@@ -759,6 +584,12 @@ header button:hover {
   text-align: center;
   line-height: 25px;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .course-info .text-wrapper p {
+    font-size: 0.7rem;
+  }
 }
 
 footer {
@@ -769,19 +600,13 @@ footer {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 992px) {
   footer {
-    height: 15vh;
+    height: 20vh;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  footer {
-    height: 15vh;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media (max-width: 768px) {
   footer {
     height: 15vh;
   }
@@ -801,41 +626,16 @@ footer .social-icons {
   height: 100%;
   font-size: 2.3rem;
   color: white;
-  cursor: pointer;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  footer .social-icons {
-    font-size: 1.5rem;
-    max-width: 60%;
-  }
+footer .social-icons a {
+  color: white;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 992px) {
   footer .social-icons {
-    font-size: 1.5rem;
-    max-width: 40%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  footer .social-icons {
-    font-size: 1.5rem;
-    max-width: 40%;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  footer .social-icons {
-    font-size: 1.5rem;
-    max-width: 40%;
-  }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  footer .social-icons {
-    font-size: 1.5rem;
-    max-width: 40%;
+    max-width: 80%;
+    font-size: 2rem;
   }
 }
 

@@ -9,25 +9,22 @@
   color: rgb(207, 204, 204);
   //   font-weight: bold;
 
-  
   .course-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
     height: 12vh;
-    
+
     h1 {
       font-size: 2rem;
-      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-        font-size: 1.3rem;
-             
-            }
-            @media only screen 
-            and (min-device-width: 375px) 
-            and (max-device-width: 667px) 
-            and (orientation: landscape) { 
-                font-size: 1.5rem;
-        
-            }
+
+      @media (max-width: 992px) {
+        font-size: 1.2rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
   .element-container {
@@ -36,43 +33,15 @@
     justify-content: space-around;
     flex-grow: 1;
     flex-wrap: wrap;
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-    flex-direction: column;
-       
-      }
-      @media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (orientation: landscape) { 
-    flex-direction: column;
-   
-}
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-    flex-direction: column;
-
-}
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
 
     .element-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex-basis: 25%;
-      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-      flex-basis: 100%;
-           
-          }
-          @media only screen 
-and (max-device-width: 768px) 
-{
-  flex-basis: 50%;
-
-}
-          
-          
     }
   }
   .icon-wrapper {
@@ -80,35 +49,21 @@ and (max-device-width: 768px)
     width: 30%;
     height: 150px;
     overflow: hidden;
+    @media (max-width: 992px) {
+      width: 12%;
+    }
+    @media (max-width: 768px) {
+      width: 18%;
+    }
 
-
+    @media (max-width: 576px) {
+      width: 25%;
+    }
 
     img {
-     @include imgCenter;
+      @include imgCenter;
       width: 100%;
-      @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (orientation: landscape) {
-        width: 70%;
     }
-    }
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 667px) 
-    and (orientation: landscape) { 
-        width: 20%;
-
-    }
-    @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-    width: 15%;
-
-}
-    
   }
   .text-wrapper {
     flex-basis: 20%;
@@ -116,5 +71,10 @@ and (max-device-width: 768px)
     text-align: center;
     line-height: 25px;
     padding: 10px;
+    p {
+      @media (max-width: 768px) {
+        font-size: 0.7rem;
+      }
+    }
   }
 }
