@@ -12,6 +12,16 @@
       justify-content: space-around;
 }
 
+@media (max-width: 992px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .about {
     -webkit-box-orient: vertical;
@@ -43,7 +53,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .about .for-circle {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -56,8 +66,8 @@
 
 .about .for-circle .circle {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 18vw;
+  height: 18vw;
   border-radius: 50%;
   background-color: white;
   margin: 25px;
@@ -79,8 +89,8 @@
 
 @media (max-width: 576px) {
   .about .for-circle .circle {
-    width: 35vw;
-    height: 35vw;
+    width: 50vw;
+    height: 50vw;
   }
 }
 
@@ -122,9 +132,16 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .about .info {
-    width: 80%;
+    width: 70%;
+    padding: 0px 0px 25px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .info {
+    width: 85%;
   }
 }
 
@@ -134,30 +151,45 @@
 
 @media (max-width: 992px) {
   .about .info h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
 
+@media (max-width: 576px) {
+  .about .info h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .about .info p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 200%;
+  width: 85%;
+}
+
+@media (max-width: 992px) {
+  .about .info p {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
   .about .info p {
+    width: 100%;
     text-align: center;
   }
 }
 
 @media (max-width: 576px) {
   .about .info p {
-    text-align: center;
+    text-align: left;
   }
 }
 
 .about .info p span {
-  color: #2e5eaf;
+  color: orange;
   font-weight: bold;
 }
 
@@ -174,14 +206,19 @@ header {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 100vh;
+}
+
+header span {
+  color: orange;
 }
 
 @media (max-width: 768px) {
   header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9))), url(../img/bgc-small.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../img/bgc-small.jpg);
+    background-position: center;
     background-attachment: scroll;
   }
 }
@@ -219,13 +256,13 @@ header .main-text {
 @media (max-width: 992px) {
   header .main-text {
     padding: 20px;
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   header .main-text {
-    padding: 15px;
+    padding: 5px;
   }
 }
 
@@ -255,6 +292,8 @@ header .main-text .inner-txt {
 
 header .main-text h1 {
   font-size: 2rem;
+  color: orange;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -275,19 +314,23 @@ header .main-text h1 {
 
 @media (max-width: 992px) {
   header .main-text h1 {
-    font-size: 1.1rem;
-    line-height: 20px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .main-text h1 {
+    font-size: 1rem;
+    line-height: 40px;
+    margin: 0px;
   }
 }
 
 @media (max-width: 576px) {
   header .main-text h1 {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 25px;
+    font-size: 1.2rem;
   }
 }
 
@@ -313,15 +356,18 @@ header .main-text h1 {
 
 @media (max-width: 768px) {
   header .main-text h2 {
-    font-size: 0.7rem;
-    text-align: center;
+    width: 80%;
+    padding: 0 14px;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 200%;
   }
 }
 
 @media (max-width: 576px) {
   header .main-text h2 {
     width: 100%;
-    font-size: 0.7rem;
   }
 }
 
@@ -361,6 +407,7 @@ header .main-text .inner-icons {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0px;
   }
 }
 
@@ -433,11 +480,16 @@ header .main-btn {
 
 header .main-btn a {
   text-decoration: none;
-  background-color: white;
-  padding: 10px 120px;
+  background-color: orange;
   text-transform: uppercase;
-  color: black;
-  font-size: 15px;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border-radius: 45px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 10px 75px;
+  font-size: 22px;
 }
 
 @media (max-width: 992px) {
@@ -447,10 +499,22 @@ header .main-btn a {
   }
 }
 
+@media (max-width: 768px) {
+  header .main-btn a {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 5px 100px;
+    border-radius: 45px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 @media (max-width: 576px) {
   header .main-btn a {
-    font-size: 0.7rem;
-    padding: 5px 80px;
+    padding: 10px 75px;
+    font-size: 22px;
   }
 }
 
@@ -465,11 +529,16 @@ header .main-btn a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 75vh;
-  background: -webkit-gradient(linear, left top, right top, from(#1e3c72), to(#2a5298));
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: orange;
   margin-top: 2.5rem;
   padding: 30px;
-  color: #cfcccc;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .course-info {
+    margin-top: 0;
+  }
 }
 
 .course-info .course-title {
@@ -484,6 +553,7 @@ header .main-btn a {
           align-items: center;
   width: 100%;
   height: 12vh;
+  text-transform: uppercase;
 }
 
 .course-info .course-title h1 {
@@ -492,13 +562,7 @@ header .main-btn a {
 
 @media (max-width: 992px) {
   .course-info .course-title h1 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .course-info .course-title h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -545,7 +609,7 @@ header .main-btn a {
 
 .course-info .icon-wrapper {
   position: relative;
-  width: 30%;
+  width: 25%;
   height: 150px;
   overflow: hidden;
 }
@@ -564,7 +628,7 @@ header .main-btn a {
 
 @media (max-width: 576px) {
   .course-info .icon-wrapper {
-    width: 25%;
+    width: 32%;
   }
 }
 
@@ -584,18 +648,19 @@ header .main-btn a {
   text-align: center;
   line-height: 25px;
   padding: 10px;
+  font-weight: 800;
+  color: #ebebeb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .course-info .text-wrapper p {
-    font-size: 0.7rem;
+    font-size: .8rem;
   }
 }
 
 footer {
   height: 10vh;
-  background: -webkit-gradient(linear, left top, right top, from(#1e3c72), to(#2a5298));
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: orange;
   width: 100%;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -630,6 +695,18 @@ footer .social-icons {
 
 footer .social-icons a {
   color: white;
+}
+
+footer .social-icons a i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .social-icons a .fa-youtube:hover,
+footer .social-icons a .fa-instagram:hover,
+footer .social-icons a .fa-linkedin:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media (max-width: 992px) {

@@ -1,6 +1,6 @@
 footer {
   height: 10vh;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: $base-color;
   width: 100%;
   @media (max-width: 992px) {
     height: 20vh;
@@ -17,9 +17,17 @@ footer {
     margin: 0 auto;
     height: 100%;
     font-size: 2.3rem;
-    color: white;
-    a{
-      color: white;
+    color: $font-color;
+    a {
+      color: $font-color;
+      i {
+        transition: 0.5s;
+      }
+      .fa-youtube:hover,
+      .fa-instagram:hover,
+      .fa-linkedin:hover {
+        transform: rotate(360deg);
+      }
     }
     @media (max-width: 992px) {
       max-width: 80%;

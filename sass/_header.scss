@@ -6,20 +6,25 @@ header {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 100vh;
+  span{
+    color:$base-color ;
+  }
 
   @media (max-width: 768px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
       url(../img/bgc-small.jpg);
-    background-attachment: scroll;
+      background-position: center;
+      background-attachment: scroll;
+
   }
   .main-text {
     display: flex;
     @include flexCenter;
     width: 50%;
     flex: 1;
-    color: white;
+    color: $font-color;
     line-height: 35px;
     background-color: rgba(0, 0, 0, 0.514);
     padding: 20px 50px;
@@ -28,10 +33,10 @@ header {
     }
     @media (max-width: 992px) {
       padding: 20px;
-      width: 90%;
+      width: 100%;
     }
     @media (max-width: 768px) {
-      padding: 15px;
+      padding: 5px;
     }
     @media (max-width: 576px) {
       padding: 10px;
@@ -46,6 +51,8 @@ header {
     }
     h1 {
       font-size: 2rem;
+      color: $base-color;
+      text-transform: uppercase;
       @media (max-width: 1200px) {
         display: flex;
         flex-grow: 1;
@@ -53,18 +60,18 @@ header {
         align-items: flex-end;
       }
       @media (max-width: 992px) {
-        font-size: 1.1rem;
-        line-height: 20px;
-        align-items: flex-end;
-      }
-      // @media (max-width: 768px) {
-      //   font-size: 1rem;
-      //   line-height: 20px;
-      //  }
-      @media (max-width: 576px) {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
-        line-height: 25px;
+        line-height: 40px;
+      }
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 40px;
+        margin: 0px;
+
+       }
+      @media (max-width: 576px) {
+        font-size: 1.2rem;
       }
     }
     h2 {
@@ -80,13 +87,15 @@ header {
       }
 
       @media (max-width: 768px) {
-        font-size: 0.7rem;
-        text-align: center;
-        // width: 100%;
+        width: 80%;
+        padding: 0 14px;
+        font-size: .8rem;
+        font-weight: 600;
+        text-align: left;
+        line-height: 200%;
       }
       @media (max-width: 576px) {
         width: 100%;
-        font-size: 0.7rem;
       }
     }
 
@@ -104,6 +113,7 @@ header {
       @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        padding: 0px;
       }
 
       .course {
@@ -147,20 +157,32 @@ header {
 
     a {
       text-decoration: none;
-      background-color: white;
-      padding: 10px 120px;
+      background-color: $base-color;
       text-transform: uppercase;
-      color: black;
-      font-size: 15px;
+      color: $font-color;
+      letter-spacing: 3px;
+      font-weight: 700;
+      border-radius: 45px;
+       box-shadow: none;
+       padding: 10px 75px;
+       font-size: 22px;
 
       @media (max-width: 992px) {
         font-size: 0.7rem;
         padding: 1px 100px;
       }
+      @media (max-width: 768px) {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 5px 100px;
+        border-radius: 45px;
+         box-shadow: none;
+      }
 
       @media (max-width: 576px) {
-        font-size: 0.7rem;
-        padding: 5px 80px;
+        padding: 10px 75px;
+        font-size: 22px;
       }
     }
   }

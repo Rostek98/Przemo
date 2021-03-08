@@ -3,9 +3,13 @@
   width: 100%;
   margin: 3rem auto;
   background: rgba(0, 0, 0, 0.938);
-  color: white;
+  color: $font-color;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media (max-width: 992px) {
+    flex-direction: column;
+     margin: 0;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -20,15 +24,17 @@
       justify-content: flex-end;
       align-items: center;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       justify-content: center;
       align-items: center;
+  
     }
+  
 
     .circle {
       position: relative;
-      width: 20vw;
-      height: 20vw;
+      width: 18vw;
+      height: 18vw;
       border-radius: 50%;
       background-color: white;
       margin: 25px;
@@ -42,8 +48,8 @@
       }
 
       @media (max-width: 576px) {
-        width: 35vw;
-        height: 35vw;
+        width: 50vw;
+        height: 50vw;
       }
 
       .inner-circle {
@@ -68,28 +74,44 @@
       flex-basis: 50%;
       padding: 25px 0;
     }
-    @media (max-width: 768px) {
-      width: 80%;
+    @media (max-width: 992px) {
+      width: 70%;
+      padding: 0px 0px 25px 0px;
     }
+    @media (max-width: 576px) {
+    width: 85%;
+    }
+    
     h1 {
       font-size: 2rem;
       @media (max-width: 992px) {
-        font-size: 1.3rem;
-        text-align: center;
-      }
-    }
-    p {
-      font-size: 0.8rem;
-      line-height: 200%;
-      @media (max-width: 768px) {
+        font-size: 1.5rem;
         text-align: center;
       }
       @media (max-width: 576px) {
+        font-size: 1.5rem;
+        
+      }
+    }
+    p {
+      font-size: 1rem;
+      line-height: 200%;
+      width: 85%;
+      @media (max-width: 992px) {
+        width: 100%;
         text-align: center;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+      @media (max-width: 576px) {
+        text-align: left;
+        
       }
 
       span {
-        color: #2e5eaf;
+        color: $base-color;
         font-weight: bold;
       }
     }
