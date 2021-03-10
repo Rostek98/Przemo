@@ -11,3 +11,15 @@
     align-self: center;
     justify-content: center;
 }
+
+@mixin buttonStyle {
+        text-decoration: none;
+        background-color: orange;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 3px;
+        font-weight: 700;
+        border-radius: 45px;
+         padding: 10px 75px;
+         font-size: 22px;
+}
